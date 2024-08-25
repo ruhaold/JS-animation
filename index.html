@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="site">
+		<div class="menu">
+			<div class="menu__top">
+        <div class="container">
+          <button class="close btn-reset" aria-label="Закрыть меню"></button>
+        </div>
+      </div>
+      <div class="container menu__container">
+        <div class="menu__left">
+          <nav class="nav menu__nav" title="Главное меню">
+            <ul class="nav__list list-reset">
+              <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Создание стратегии</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Фотосъёмка</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Ретушь</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Аренда студии</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="social list-reset">
+            <li class="social__item"><a class="social__link social__link--vk" href="#" aria-label="Перейти во Вконтакте"></a></li>
+            <li class="social__item"><a class="social__link social__link--insta" href="#" aria-label="Перейти в Инстаграм"></a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Перейти в Фейсбук"></a></li>
+          </ul>
+        </div>
+        <div class="menu__right">
+          <div class="sub-menu">
+            <h3 class="sub-menu__title">Кейсы</h3>
+            <ul class="sub-menu__list list-reset">
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Уста к устам</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Zara</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">New Balance</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Levi`s</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Rains</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Abercrombie & Fitch</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Massimo Dutti</a></li>
+            </ul>
+          </div>
+          <div class="sub-menu">
+            <h3 class="sub-menu__title">Партнёрам</h3>
+            <ul class="sub-menu__list list-reset">
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Условия партнёрства</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Статистика</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">О нас</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+		</div>
+    <header class="header">
+      <div class="container header__container">
+        <button class="btn-reset burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a class="logo">
+          <img src="img/logo.png" alt="Логотип 12:21">
+        </a>
+        <nav class="header__nav nav" title="Мини-меню">
+          <a class="nav__link" href="#">Вход</a>
+          <a class="nav__link nav__link--arrow" href="#">Услуги</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="visually-hidden">12:21 - Выбери свой look!</h1>
+          <div class="hero__left">
+            <h2 class="hero__title">
+              Создадим имидж вашему бренду
+            </h2>
+            <p class="hero__descr">
+              Все этапы создания контента. От&nbsp;фотосессии до&nbsp;пре-пресса.
+            </p>
+            <button class="btn reset hero__btn">Ознакомиться</button>
+          </div>
+          <div class="hero__photos photos">
+            <div class="photos__shape">
+              <div class="photos__author">
+                Автор фото: Сергей Журавлёв. <a href="">Портфолио автора</a>
+              </div>
+              <div class="photos__head">
+                <img src="img/12_21.png" aria-hidden="true" alt>
+                <img src="img/social.png" aria-hidden="true" alt>
+              </div>
+              <div class="photos-wrap">
+                <img src="img/1.jpg" alt="Изображение 1">
+                <img src="img/2.jpg" alt="Изображение 2">
+                <img src="img/3.jpg" alt="Изображение 3">
+              </div>
+            </div>
+            <div class="photos__shape"></div>
+            <div class="photos__shape"></div>
+            <div class="photos__shape"></div>
+            <div class="photos__shape"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="./js/main.js"> </script>
+
+</html>
